@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="col-lg-3 col-12">
               <h5 className="text-white mb-3">Solution Provider</h5>
               <p className="text-muted">
-                We provide tech solutions for upscaling or upgrading you
+                We provide tech solutions for upscaling or upgrading your
                 businesses
               </p>
             </div>
@@ -17,29 +17,19 @@ export default function Footer() {
               <h5 className="text-white mb-3">Quick Links</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a href="/" className="text-muted">
-                    Home
-                  </a>
+                  <a href="/" className="text-muted">Home</a>
                 </li>
                 <li>
-                  <a href="/services" className="text-muted">
-                    Services
-                  </a>
+                  <a href="/services" className="text-muted">Services</a>
                 </li>
                 <li>
-                  <a href="/pricing" className="text-muted">
-                    Pricing
-                  </a>
+                  <a href="/pricing" className="text-muted">Pricing</a>
                 </li>
                 <li>
-                  <a href="/about" className="text-muted">
-                    About Us
-                  </a>
+                  <a href="/about" className="text-muted">About Us</a>
                 </li>
                 <li>
-                  <a href="/contact" className="text-muted">
-                    Contact Us
-                  </a>
+                  <a href="/contact" className="text-muted">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -47,14 +37,10 @@ export default function Footer() {
               <h5 className="text-white mb-3">Contact Us</h5>
               <ul className="list-unstyled">
                 <li className="text-muted">
-                  <i className="bi bi-geo-alt-fill text-muted">
-                    {" "}
-                     Gujarat
-                  </i>
+                  <i className="bi bi-geo-alt-fill text-muted"> Gujarat</i>
                 </li>
                 <li className="text-muted">
-                  <i className="bi bi-telephone-fill text-muted"></i> +91
-                  998822446677
+                  <i className="bi bi-telephone-fill text-muted"></i> +91 998822446677
                 </li>
                 <li>
                   <i className="bi bi-envelope-fill text-muted"></i>{" "}
@@ -72,20 +58,26 @@ export default function Footer() {
               <ul className="list-inline">
                 <li className="list-inline-item">
                   <a
-                    href=""
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     className="text-muted"
                   >
                     <i className="bi bi-facebook"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="" className="text-muted">
+                  <a
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
+                    className="text-muted"
+                  >
                     <i className="bi bi-twitter"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
                   <a
-                    href=""
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     className="text-muted"
                   >
                     <i className="bi bi-instagram"></i>
@@ -93,7 +85,8 @@ export default function Footer() {
                 </li>
                 <li className="list-inline-item">
                   <a
-                    href=""
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     className="text-muted"
                   >
                     <i className="bi bi-linkedin"></i>
@@ -107,7 +100,7 @@ export default function Footer() {
           <div className="row">
             <div className="col text-center">
               <p className="text-muted mb-0 py-2">
-                @RIGHTS RESERVERD
+                © RIGHTS RESERVED
               </p>
             </div>
           </div>
