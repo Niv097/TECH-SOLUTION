@@ -19,13 +19,13 @@ jobs:
           node-version: 18.x
 
       - name: Install & test backend
-        working-directory: ./src/backend
+        working-directory: ./src/Backend
         run: |
           npm install
           npm test || echo "No backend tests"
 
       - name: Install & build frontend
-        working-directory: ./src/frontend
+        working-directory: ./src/Fsrontend
         run: |
           npm install
           npm run build
