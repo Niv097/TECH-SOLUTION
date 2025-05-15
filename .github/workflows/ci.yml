@@ -25,7 +25,7 @@ jobs:
           npm test || echo "No backend tests"
 
       - name: Install & build frontend
-        working-directory: ./src/Fsrontend
+        working-directory: ./src/Frontend
         run: |
           npm install
           npm run build
