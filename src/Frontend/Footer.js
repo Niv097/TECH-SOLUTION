@@ -16,21 +16,11 @@ export default function Footer() {
             <div className="col-lg-3 col-12">
               <h5 className="text-white mb-3">Quick Links</h5>
               <ul className="list-unstyled">
-                <li>
-                  <a href="/" className="text-muted">Home</a>
-                </li>
-                <li>
-                  <a href="/services" className="text-muted">Services</a>
-                </li>
-                <li>
-                  <a href="/pricing" className="text-muted">Pricing</a>
-                </li>
-                <li>
-                  <a href="/about" className="text-muted">About Us</a>
-                </li>
-                <li>
-                  <a href="/contact" className="text-muted">Contact Us</a>
-                </li>
+                <li><a href="/" className="text-muted">Home</a></li>
+                <li><a href="/services" className="text-muted">Services</a></li>
+                <li><a href="/pricing" className="text-muted">Pricing</a></li>
+                <li><a href="/about" className="text-muted">About Us</a></li>
+                <li><a href="/contact" className="text-muted">Contact Us</a></li>
               </ul>
             </div>
             <div className="col-lg-3 col-12">
@@ -57,40 +47,44 @@ export default function Footer() {
               <h5 className="text-white mb-3">Connect with Us</h5>
               <ul className="list-inline">
                 <li className="list-inline-item">
-                  <a
-                    href="#"
-                    onClick={(e) => e.preventDefault()}
-                    className="text-muted"
+                  <button
+                    type="button"
+                    className="btn btn-link text-muted p-0"
+                    aria-label="Facebook"
+                    onClick={() => {}}
                   >
                     <i className="bi bi-facebook"></i>
-                  </a>
+                  </button>
                 </li>
                 <li className="list-inline-item">
-                  <a
-                    href="#"
-                    onClick={(e) => e.preventDefault()}
-                    className="text-muted"
+                  <button
+                    type="button"
+                    className="btn btn-link text-muted p-0"
+                    aria-label="Twitter"
+                    onClick={() => {}}
                   >
                     <i className="bi bi-twitter"></i>
-                  </a>
+                  </button>
                 </li>
                 <li className="list-inline-item">
-                  <a
-                    href="#"
-                    onClick={(e) => e.preventDefault()}
-                    className="text-muted"
+                  <button
+                    type="button"
+                    className="btn btn-link text-muted p-0"
+                    aria-label="Instagram"
+                    onClick={() => {}}
                   >
                     <i className="bi bi-instagram"></i>
-                  </a>
+                  </button>
                 </li>
                 <li className="list-inline-item">
-                  <a
-                    href="#"
-                    onClick={(e) => e.preventDefault()}
-                    className="text-muted"
+                  <button
+                    type="button"
+                    className="btn btn-link text-muted p-0"
+                    aria-label="LinkedIn"
+                    onClick={() => {}}
                   >
                     <i className="bi bi-linkedin"></i>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
