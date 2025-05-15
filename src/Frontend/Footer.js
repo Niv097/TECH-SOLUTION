@@ -1,118 +1,48 @@
-import "./style.css";
+import React from 'react';
 
-export default function Footer() {
+function Footer() {
   return (
-    <>
-      <footer className="py-5 bg-dark">
-        <div className="container px-4 px-lg-5">
-          <div className="row gx-5">
-            <div className="col-lg-3 col-12">
-              <h5 className="text-white mb-3">Solution Provider</h5>
-              <p className="text-muted">
-                We provide tech solutions for upscaling or upgrading you
-                businesses
-              </p>
-            </div>
-            <div className="col-lg-3 col-12">
-              <h5 className="text-white mb-3">Quick Links</h5>
-              <ul className="list-unstyled">
-                <li>
-                  <a href="/" className="text-muted">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="/services" className="text-muted">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="/pricing" className="text-muted">
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a href="/about" className="text-muted">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="/contact" className="text-muted">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-12">
-              <h5 className="text-white mb-3">Contact Us</h5>
-              <ul className="list-unstyled">
-                <li className="text-muted">
-                  <i className="bi bi-geo-alt-fill text-muted">
-                    {" "}
-                     Gujarat
-                  </i>
-                </li>
-                <li className="text-muted">
-                  <i className="bi bi-telephone-fill text-muted"></i> +91
-                  998822446677
-                </li>
-                <li>
-                  <i className="bi bi-envelope-fill text-muted"></i>{" "}
-                  <a
-                    href="mailto:contact@solutionprovider.com"
-                    className="text-muted"
-                  >
-                    niv@gmail.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-12">
-              <h5 className="text-white mb-3">Connect with Us</h5>
-              <ul className="list-inline">
-                <li className="list-inline-item">
-                  <a
-                    href=""
-                    className="text-muted"
-                  >
-                    <i className="bi bi-facebook"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="" className="text-muted">
-                    <i className="bi bi-twitter"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a
-                    href=""
-                    className="text-muted"
-                  >
-                    <i className="bi bi-instagram"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a
-                    href=""
-                    className="text-muted"
-                  >
-                    <i className="bi bi-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col text-center">
-              <p className="text-muted mb-0 py-2">
-                @RIGHTS RESERVERD
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </>
+    <footer style={styles.footer}>
+      <div style={styles.linksContainer}>
+        <h4>Quick Links</h4>
+        <nav style={styles.nav}>
+          <a href="/about" style={styles.link}>About</a>
+          <a href="/services" style={styles.link}>Services</a>
+          <a href="/contact" style={styles.link}>Contact</a>
+          <a href="/support" style={styles.link}>Support</a>
+        </nav>
+      </div>
+      <div style={styles.copyRight}>
+        © {new Date().getFullYear()} Tech Solutions. All rights reserved.
+      </div>
+    </footer>
   );
 }
+
+const styles = {
+  footer: {
+    padding: '20px',
+    backgroundColor: '#f5f5f5',
+    textAlign: 'center',
+  },
+  linksContainer: {
+    marginBottom: '10px',
+  },
+  nav: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '8px',
+    alignItems: 'center',
+  },
+  link: {
+    color: '#007bff',
+    textDecoration: 'none',
+    fontSize: '16px',
+  },
+  copyRight: {
+    marginTop: '10px',
+    color: '#777',
+  },
+};
+
+export default Footer;
